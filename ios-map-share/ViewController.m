@@ -7,21 +7,25 @@
 //
 
 #import "ViewController.h"
-
+#import "LocChoseController.h"
+#import "BLocChoseController.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+#pragma mark - view lifecycle
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)locationShow:(id)sender {
+    LocChoseController *locVC=[[LocChoseController alloc]init];
+    [self presentViewController:locVC animated:YES completion:nil];
+}
+- (IBAction)locationShowBaidu:(id)sender {
+    BLocChoseController *blocVC=[[BLocChoseController alloc]init];
+    [self presentViewController:blocVC animated:YES completion:nil];
 }
 
 @end
