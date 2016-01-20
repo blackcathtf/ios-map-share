@@ -31,18 +31,28 @@
                                     <action selector="locationShowBaidu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jDY-uL-C0G"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieZ-7T-Qek">
+                                <rect key="frame" x="255" y="209" width="90" height="30"/>
+                                <state key="normal" title="自带地图导航"/>
+                                <connections>
+                                    <action selector="naviShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2E-fP-Pxt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fZE-ZN-lJ7" firstAttribute="top" secondItem="cdq-d7-zDg" secondAttribute="bottom" constant="8" id="Nah-bm-hoX"/>
                             <constraint firstItem="cdq-d7-zDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oln-7K-Ik9"/>
+                            <constraint firstItem="ieZ-7T-Qek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iho-Gh-cbX"/>
                             <constraint firstItem="fZE-ZN-lJ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jLQ-1e-j5I"/>
+                            <constraint firstItem="cdq-d7-zDg" firstAttribute="top" secondItem="ieZ-7T-Qek" secondAttribute="bottom" constant="8" id="rmO-72-OMr"/>
                             <constraint firstItem="fZE-ZN-lJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xAf-xs-WxX"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="396" y="290"/>
         </scene>
     </scenes>
 </document>

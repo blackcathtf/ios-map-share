@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "LocChoseController.h"
 #import "BLocChoseController.h"
+#import "LocNaviController.h"
 @interface ViewController ()
 
 @end
@@ -26,6 +27,10 @@
 - (IBAction)locationShowBaidu:(id)sender {
     BLocChoseController *blocVC=[[BLocChoseController alloc]init];
     [self presentViewController:blocVC animated:YES completion:nil];
+}
+- (IBAction)naviShow:(id)sender {
+    LocNaviController *navVC=[[LocNaviController alloc]init];
+    [self presentViewController:navVC animated:YES completion:nil];
 }
 
 @end

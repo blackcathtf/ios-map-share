@@ -10,4 +10,6 @@
 
 @interface PageThirdMap : NSObject
 
++(NSArray *)checkHasOwnApp;
+
 @end

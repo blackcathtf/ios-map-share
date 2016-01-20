@@ -19,11 +19,6 @@
 #define LOCAL_BTN_H 40
 #define LOCAL_BTN_W 40
 
-//屏幕高度
-#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
-//屏幕宽度
-#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
-
 static NSString* const addressCellIdentifier=@"addressCellIdentifier";
 
 @interface BLocChoseController()<BMKMapViewDelegate,BMKGeoCodeSearchDelegate,BMKLocationServiceDelegate,UITableViewDataSource,UITableViewDelegate>

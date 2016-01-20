@@ -11,18 +11,11 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-#import "CLLocation+Mars.h"
-
 #define PIN_H 46
 #define PIN_W 28
 
 #define LOCAL_BTN_H 40
 #define LOCAL_BTN_W 40
-
-//屏幕高度
-#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
-//屏幕宽度
-#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 
 static NSString* const addressCellIdentifier=@"addressCellIdentifier";
 
@@ -91,6 +84,7 @@ static NSString* const addressCellIdentifier=@"addressCellIdentifier";
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated{
     CLLocationCoordinate2D centerCoor=mapView.centerCoordinate;
     [self reverseGeocode:centerCoor];
+//    NSLog(@"lati==%f---long==%f",centerCoor.latitude,centerCoor.longitude);
 }
 #pragma mark - CLLocationManagerDelegate
 
