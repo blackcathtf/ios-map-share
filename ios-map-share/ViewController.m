@@ -10,6 +10,7 @@
 #import "LocChoseController.h"
 #import "BLocChoseController.h"
 #import "LocNaviController.h"
+#import "AddressSearchController.h"
 @interface ViewController ()
 
 @end
@@ -31,6 +32,10 @@
 - (IBAction)naviShow:(id)sender {
     LocNaviController *navVC=[[LocNaviController alloc]init];
     [self presentViewController:navVC animated:YES completion:nil];
+}
+- (IBAction)addressSearch:(id)sender {
+    AddressSearchController *addVC=[[AddressSearchController alloc]init];
+    [self presentViewController:addVC animated:YES completion:nil];
 }
 
 @end

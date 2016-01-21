@@ -38,9 +38,18 @@
                                     <action selector="naviShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c2E-fP-Pxt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-wb-Pa6">
+                                <rect key="frame" x="230" y="171" width="141" height="30"/>
+                                <state key="normal" title="地址搜索（原生api）"/>
+                                <connections>
+                                    <action selector="addressSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8E-TJ-6pd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ieZ-7T-Qek" firstAttribute="top" secondItem="rJi-wb-Pa6" secondAttribute="bottom" constant="8" id="7du-6A-2c8"/>
+                            <constraint firstItem="rJi-wb-Pa6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7rG-Bm-jua"/>
                             <constraint firstItem="fZE-ZN-lJ7" firstAttribute="top" secondItem="cdq-d7-zDg" secondAttribute="bottom" constant="8" id="Nah-bm-hoX"/>
                             <constraint firstItem="cdq-d7-zDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oln-7K-Ik9"/>
                             <constraint firstItem="ieZ-7T-Qek" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iho-Gh-cbX"/>
@@ -52,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="290"/>
+            <point key="canvasLocation" x="224" y="297"/>
         </scene>
     </scenes>
 </document>

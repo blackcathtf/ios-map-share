@@ -21,17 +21,18 @@ static NSString* const addressCellIdentifier=@"addressCellIdentifier";
 
 @interface LocChoseController ()<MKMapViewDelegate,UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong)CLGeocoder *geocoder;
-@property (nonatomic,strong)CLLocationManager *locationManager;
-@property (nonatomic,strong)MKMapView *map;
-@property (nonatomic,strong)UIImageView *pinImg;
-@property (nonatomic,strong)UIButton *localBtn;
-@property (nonatomic,strong)UITableView *tableView;
-@property (nonatomic,strong)UIButton *closeBtn;
+@property (nonatomic,strong) CLGeocoder *geocoder;
+@property (nonatomic,strong) CLLocationManager *locationManager;
+@property (nonatomic,strong) MKMapView *map;
 
-@property (nonatomic,strong)NSArray *placeArray;
-@property (nonatomic,assign)BOOL isLocation;
-@property (nonatomic,assign)CLLocationCoordinate2D localCor;
+@property (nonatomic,strong) UIImageView *pinImg;
+@property (nonatomic,strong) UIButton *localBtn;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) UIButton *closeBtn;
+
+@property (nonatomic,strong) NSArray *placeArray;
+@property (nonatomic,assign) BOOL isLocation;
+@property (nonatomic,assign) CLLocationCoordinate2D localCor;
 
 @end
 
@@ -178,6 +179,5 @@ static NSString* const addressCellIdentifier=@"addressCellIdentifier";
     }
     return _geocoder;
 }
-
 
 @end

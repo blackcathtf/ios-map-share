@@ -23,19 +23,19 @@ static NSString* const addressCellIdentifier=@"addressCellIdentifier";
 
 @interface BLocChoseController()<BMKMapViewDelegate,BMKGeoCodeSearchDelegate,BMKLocationServiceDelegate,UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic,strong)BMKMapView *map;
-@property (nonatomic,strong)BMKGeoCodeSearch *geoCodeSearch;
-@property (nonatomic,strong)BMKLocationService *locService;
-@property (nonatomic,strong)BMKReverseGeoCodeOption *reverseGeoCodeOption;
+@property (nonatomic,strong) BMKMapView *map;
+@property (nonatomic,strong) BMKGeoCodeSearch *geoCodeSearch;
+@property (nonatomic,strong) BMKLocationService *locService;
+@property (nonatomic,strong) BMKReverseGeoCodeOption *reverseGeoCodeOption;
 
-@property (nonatomic,strong)UIImageView *pinImg;
-@property (nonatomic,strong)UIButton *localBtn;
-@property (nonatomic,strong)UITableView *tableView;
-@property (nonatomic,strong)UIButton *closeBtn;
+@property (nonatomic,strong) UIImageView *pinImg;
+@property (nonatomic,strong) UIButton *localBtn;
+@property (nonatomic,strong) UITableView *tableView;
+@property (nonatomic,strong) UIButton *closeBtn;
 
-@property (nonatomic,strong)NSArray *poiArray;
-@property (nonatomic,assign)BOOL isLocation;
-@property (nonatomic,assign)CLLocationCoordinate2D localCor;
+@property (nonatomic,strong) NSArray *poiArray;
+@property (nonatomic,assign) BOOL isLocation;
+@property (nonatomic,assign) CLLocationCoordinate2D localCor;
 
 @end
 

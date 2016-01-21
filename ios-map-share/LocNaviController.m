@@ -27,17 +27,17 @@ static NSString* const testAnnotationIdentifier=@"testAnnotationIdentifier";
 
 @interface LocNaviController()<MKMapViewDelegate,UIActionSheetDelegate>
 
-@property (nonatomic,strong)MKMapView *map;
+@property (nonatomic,strong) MKMapView *map;
 
-@property (nonatomic,strong)UIView *toolBar;
-@property (nonatomic,strong)UIButton *closeBtn;
+@property (nonatomic,strong) UIView *toolBar;
+@property (nonatomic,strong) UIButton *closeBtn;
 
-@property (nonatomic,assign)BOOL isLocation;
-@property (nonatomic,assign)CLLocationCoordinate2D localCor;
-@property (nonatomic,assign)CLLocationCoordinate2D naviCoor;
-@property (nonatomic,strong)NSArray *routes;//ios6路线arr
+@property (nonatomic,assign) BOOL isLocation;
+@property (nonatomic,assign) CLLocationCoordinate2D localCor;
+@property (nonatomic,assign) CLLocationCoordinate2D naviCoor;
+@property (nonatomic,strong) NSArray *routes;//ios6路线arr
 
-@property (nonatomic,strong)NaviAnnotation *naviPoi;
+@property (nonatomic,strong) NaviAnnotation *naviPoi;
 
 @end
 

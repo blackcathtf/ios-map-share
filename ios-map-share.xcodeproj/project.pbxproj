@@ -16,6 +16,7 @@
 		014FAAC91C4CC3420094FD20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014FAAC71C4CC3420094FD20 /* LaunchScreen.storyboard */; };
 		014FAAD11C4CD07F0094FD20 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014FAAD01C4CD07F0094FD20 /* MapKit.framework */; };
 		014FAAD31C4CD4360094FD20 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 014FAAD21C4CD4360094FD20 /* CoreLocation.framework */; };
+		015173051C506CD000746FA7 /* AddressSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 015173041C506CD000746FA7 /* AddressSearchController.m */; };
 		01692F9F1C4F5C1400774988 /* LocNaviController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01692F9E1C4F5C1400774988 /* LocNaviController.m */; };
 		01692FA31C4F6EE000774988 /* BaiduLocationMars.m in Sources */ = {isa = PBXBuildFile; fileRef = 01692FA21C4F6EE000774988 /* BaiduLocationMars.m */; };
 		01692FA91C4F7B8500774988 /* NaviAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 01692FA81C4F7B8500774988 /* NaviAnnotation.m */; };
@@ -53,6 +54,8 @@
 		014FAACA1C4CC3420094FD20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		014FAAD01C4CD07F0094FD20 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		014FAAD21C4CD4360094FD20 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		015173031C506CD000746FA7 /* AddressSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressSearchController.h; sourceTree = "<group>"; };
+		015173041C506CD000746FA7 /* AddressSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressSearchController.m; sourceTree = "<group>"; };
 		01692F9D1C4F5C1400774988 /* LocNaviController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocNaviController.h; sourceTree = "<group>"; };
 		01692F9E1C4F5C1400774988 /* LocNaviController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocNaviController.m; sourceTree = "<group>"; };
 		01692FA01C4F5D3200774988 /* IMS_Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMS_Prefix.pch; sourceTree = "<group>"; };
@@ -129,16 +132,8 @@
 		014FAAB81C4CC3420094FD20 /* ios-map-share */ = {
 			isa = PBXGroup;
 			children = (
-				01692FAD1C4F822700774988 /* RegexKitLite.h */,
-				01692FAE1C4F822700774988 /* RegexKitLite.m */,
-				01692FA11C4F6EE000774988 /* BaiduLocationMars.h */,
-				01692FA21C4F6EE000774988 /* BaiduLocationMars.m */,
-				014FAABC1C4CC3420094FD20 /* AppDelegate.h */,
-				014FAABD1C4CC3420094FD20 /* AppDelegate.m */,
-				0118B9131C4CE6D9002566A1 /* PageThirdMap.h */,
-				0118B9141C4CE6D9002566A1 /* PageThirdMap.m */,
-				01692FA71C4F7B8500774988 /* NaviAnnotation.h */,
-				01692FA81C4F7B8500774988 /* NaviAnnotation.m */,
+				015172FF1C506C6B00746FA7 /* Model */,
+				015172FE1C506C4900746FA7 /* Utils */,
 				014FAABF1C4CC3420094FD20 /* ViewController.h */,
 				014FAAC01C4CC3420094FD20 /* ViewController.m */,
 				01B0F1691C4DD08F002A5D3F /* LocChoseController.h */,
@@ -147,12 +142,13 @@
 				01B0F1791C4E28F3002A5D3F /* BLocChoseController.m */,
 				01692F9D1C4F5C1400774988 /* LocNaviController.h */,
 				01692F9E1C4F5C1400774988 /* LocNaviController.m */,
+				015173031C506CD000746FA7 /* AddressSearchController.h */,
+				015173041C506CD000746FA7 /* AddressSearchController.m */,
 				014FAAC21C4CC3420094FD20 /* Main.storyboard */,
 				014FAAC51C4CC3420094FD20 /* Assets.xcassets */,
 				014FAAC71C4CC3420094FD20 /* LaunchScreen.storyboard */,
 				014FAACA1C4CC3420094FD20 /* Info.plist */,
 				014FAAB91C4CC3420094FD20 /* Supporting Files */,
-				01692FA01C4F5D3200774988 /* IMS_Prefix.pch */,
 			);
 			path = "ios-map-share";
 			sourceTree = "<group>";
@@ -160,9 +156,34 @@
 		014FAAB91C4CC3420094FD20 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01692FA01C4F5D3200774988 /* IMS_Prefix.pch */,
+				014FAABC1C4CC3420094FD20 /* AppDelegate.h */,
+				014FAABD1C4CC3420094FD20 /* AppDelegate.m */,
 				014FAABA1C4CC3420094FD20 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		015172FE1C506C4900746FA7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0118B9131C4CE6D9002566A1 /* PageThirdMap.h */,
+				0118B9141C4CE6D9002566A1 /* PageThirdMap.m */,
+				01692FAD1C4F822700774988 /* RegexKitLite.h */,
+				01692FAE1C4F822700774988 /* RegexKitLite.m */,
+				01692FA11C4F6EE000774988 /* BaiduLocationMars.h */,
+				01692FA21C4F6EE000774988 /* BaiduLocationMars.m */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		015172FF1C506C6B00746FA7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				01692FA71C4F7B8500774988 /* NaviAnnotation.h */,
+				01692FA81C4F7B8500774988 /* NaviAnnotation.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		01B0F16F1C4E28A6002A5D3F /* Lib */ = {
@@ -261,6 +282,7 @@
 			files = (
 				014FAAC11C4CC3420094FD20 /* ViewController.m in Sources */,
 				01692FA91C4F7B8500774988 /* NaviAnnotation.m in Sources */,
+				015173051C506CD000746FA7 /* AddressSearchController.m in Sources */,
 				01B0F16B1C4DD08F002A5D3F /* LocChoseController.m in Sources */,
 				014FAABE1C4CC3420094FD20 /* AppDelegate.m in Sources */,
 				014FAABB1C4CC3420094FD20 /* main.m in Sources */,
