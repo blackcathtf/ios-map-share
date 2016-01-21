@@ -32,6 +32,7 @@ static NSString * const addressTabelViewCellIdentifier = @"addressTabelViewCellI
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor whiteColor];
     [self initSearchBar];
+    [self initClose];
 }
 
 #pragma mark - UISearchBarDelegate
@@ -66,7 +67,11 @@ static NSString * const addressTabelViewCellIdentifier = @"addressTabelViewCellI
     cell.textLabel.text=placemark.name;
     return cell;
 }
-
+#pragma mark - event Action
+-(void)closeView
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 #pragma mark - init
 -(void)initSearchBar{
     _searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 20, SCREEN_WIDTH, 44)];
@@ -79,7 +84,15 @@ static NSString * const addressTabelViewCellIdentifier = @"addressTabelViewCellI
     _searchDisplayController.searchResultsDelegate=self;
     
 }
-
+-(void)initClose{
+    UIButton *btn=[[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 40)];
+    btn.center=self.view.center;
+    [btn setTitle:@"back" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(closeView) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
+    
+}
 #pragma mark - get & set
 -(CLGeocoder*)geocoder{
     
