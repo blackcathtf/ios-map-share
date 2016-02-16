@@ -71,9 +71,10 @@ static NSString* const addressCellIdentifier=@"addressCellIdentifier";
     BMKPoiInfo *poiInfo=[_poiArray objectAtIndex:indexPath.row];
     UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:addressCellIdentifier];
     if (cell==nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:addressCellIdentifier];
+        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:addressCellIdentifier];
     }
     cell.textLabel.text=poiInfo.name;
+    cell.detailTextLabel.text=poiInfo.address;
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

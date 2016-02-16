@@ -66,6 +66,7 @@ static NSString* const testAnnotationIdentifier=@"testAnnotationIdentifier";
         newAnnotation.pinColor = MKPinAnnotationColorGreen;
         newAnnotation.animatesDrop = YES;
         newAnnotation.canShowCallout=YES;
+        newAnnotation.enabled=YES;
         return newAnnotation;
 
     }else{
